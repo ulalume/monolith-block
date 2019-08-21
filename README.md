@@ -1,5 +1,5 @@
 ## Requirement (Windows)
-### software
+### software のインストール
 
 #### lua
 [ここ](https://sourceforge.net/projects/luabinaries/files/5.1.5/Windows%20Libraries/Dynamic/)から lua-5.1.5_Win32_dllw6_lib.zip をダウンロード。
@@ -13,15 +13,19 @@
 
 展開したファイルを全て C:\luarocks に移動。
 
-#### それぞれ環境変数に追加
+#### 環境変数に追加
 - PATH
     - C:\lua5.1
     - C:\luarocks
 - LUA_INCDIR
     - C:\lua5.1\include
 
-### monolith libraries
+### love2d のライブラリをインストール
 ```bash
+cd monolith-block
+
+# monolith
+
 # led matrix
 luarocks install https://github.com/hnd2/MONOLITH/releases/download/v0.0.1/monolith-dev-1.rockspec --tree=lua_modules --lua-dir=C:\lua5.1
 
@@ -33,22 +37,21 @@ luarocks install https://github.com/ulalume/monolith-graphics/releases/download/
 
 # util
 luarocks install https://github.com/ulalume/monolith-util/releases/download/v0.1/util-dev-1.rockspec --tree=lua_modules --lua-dir=C:\lua5.1
-```
 
-### 3rd party
-```bash
+# 3rd party
+
 # json
 luarocks install rxi-json-lua  --tree=lua_modules --lua-dir=C:\lua5.1
-
-# anim8
-curl https://raw.githubusercontent.com/kikito/anim8/master/anim8.lua > lua_modules/share/lua/5.1/anim8.lua
 ```
 
 
 ## Requirement (Mac, Linux)
 
-### monolith libraries
+### love2d のライブラリをインストール
 ```bash
+
+# monolith
+
 # led matrix
 luarocks install https://github.com/hnd2/MONOLITH/releases/download/v0.0.1/monolith-dev-1.rockspec --tree=lua_modules --lua-dir=/usr/local/opt/lua@5.1
 
@@ -60,13 +63,9 @@ luarocks install https://github.com/ulalume/monolith-graphics/releases/download/
 
 # util
 luarocks install https://github.com/ulalume/monolith-util/releases/download/v0.1/util-dev-1.rockspec --tree=lua_modules --lua-dir=/usr/local/opt/lua@5.1
-```
 
-### 3rd party
-```bash
+# 3rd party
+
 # json
-luarocks install rxi-json-lua  --tree=lua_modules --lua-dir=/usr/local/opt/lua@5.1
-
-# anim8
-curl https://raw.githubusercontent.com/kikito/anim8/master/anim8.lua > lua_modules/share/lua/5.1/anim8.lua
+luarocks install rxi-json-lua  --tree=lua_modules --lua-dir=C:\lua5.1
 ```
