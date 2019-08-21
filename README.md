@@ -5,6 +5,7 @@
 [ここ](https://sourceforge.net/projects/luabinaries/files/5.1.5/Windows%20Libraries/Dynamic/)から lua-5.1.5_Win32_dllw6_lib.zip をダウンロード。
 
 [ここ](https://sourceforge.net/projects/luabinaries/files/5.1.5/Tools%20Executables/)から lua-5.1.5_Win32_bin.zip をダウンロード。
+
 展開したファイルを全て C:\lua5.1 に移動。
 
 #### luarocks
