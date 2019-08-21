@@ -21,6 +21,7 @@
     - C:\lua5.1\include
 
 ### love2d のライブラリをインストール
+Windows PowerShell の管理者モードでできました。
 ```bash
 cd monolith-block
 
