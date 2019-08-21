@@ -1,27 +1,28 @@
-## Requirement for Windows
+## Requirement (Windows)
 ### software
 
 #### lua
-lua-5.1.5_Win32_dllw6_lib.zip
-https://sourceforge.net/projects/luabinaries/files/5.1.5/Windows%20Libraries/Dynamic/
-lua-5.1.5_Win32_bin.zip
-https://sourceforge.net/projects/luabinaries/files/5.1.5/Tools%20Executables/
 
-zip を展開したファイルを全て C:\lua5.1 に移動。
+lua-5.1.5_Win32_dllw6_lib.zip をダウンロード
+[https://sourceforge.net/projects/luabinaries/files/5.1.5/Windows%20Libraries/Dynamic/](https://sourceforge.net/projects/luabinaries/files/5.1.5/Windows%20Libraries/Dynamic/)
+
+lua-5.1.5_Win32_bin.zip をダウンロード
+[https://sourceforge.net/projects/luabinaries/files/5.1.5/Tools%20Executables/](https://sourceforge.net/projects/luabinaries/files/5.1.5/Tools%20Executables/)
+
+展開したファイルを全て C:\lua5.1 に移動。
 
 #### luarocks
 luarocks-3.1.3-windows-32.zip
-https://luarocks.github.io/luarocks/releases/
+[https://luarocks.github.io/luarocks/releases/](https://luarocks.github.io/luarocks/releases/)
 
-zip を展開したファイルを全て C:\luarocks に移動。
+展開したファイルを全て C:\luarocks に移動。
 
-#### 環境変数
-PATH
-- C:\lua5.1
-- C:\luarocks
-
-LUA_INCDIR
-- C:\lua5.1\include
+#### それぞれ環境変数に追加
+- PATH
+    - C:\lua5.1
+    - C:\luarocks
+- LUA_INCDIR
+    - C:\lua5.1\include
 
 ### monolith libraries
 ```bash
@@ -48,7 +49,7 @@ curl https://raw.githubusercontent.com/kikito/anim8/master/anim8.lua > lua_modul
 ```
 
 
-## Requirement
+## Requirement (Mac, Linux)
 
 ### monolith libraries
 ```bash
