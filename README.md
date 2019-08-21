@@ -2,18 +2,13 @@
 ### software
 
 #### lua
+[ここ](https://sourceforge.net/projects/luabinaries/files/5.1.5/Windows%20Libraries/Dynamic/)から lua-5.1.5_Win32_dllw6_lib.zip をダウンロード。
 
-lua-5.1.5_Win32_dllw6_lib.zip をダウンロード
-[https://sourceforge.net/projects/luabinaries/files/5.1.5/Windows%20Libraries/Dynamic/](https://sourceforge.net/projects/luabinaries/files/5.1.5/Windows%20Libraries/Dynamic/)
-
-lua-5.1.5_Win32_bin.zip をダウンロード
-[https://sourceforge.net/projects/luabinaries/files/5.1.5/Tools%20Executables/](https://sourceforge.net/projects/luabinaries/files/5.1.5/Tools%20Executables/)
-
+[ここ](https://sourceforge.net/projects/luabinaries/files/5.1.5/Tools%20Executables/)から lua-5.1.5_Win32_bin.zip をダウンロード。
 展開したファイルを全て C:\lua5.1 に移動。
 
 #### luarocks
-luarocks-3.1.3-windows-32.zip
-[https://luarocks.github.io/luarocks/releases/](https://luarocks.github.io/luarocks/releases/)
+[ここ](https://luarocks.github.io/luarocks/releases/)から luarocks-3.1.3-windows-32.zip をダウンロード。
 
 展開したファイルを全て C:\luarocks に移動。
 
