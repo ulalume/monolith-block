@@ -68,5 +68,5 @@ luarocks install https://github.com/ulalume/monolith-util/releases/download/v0.1
 # 3rd party
 
 # json
-luarocks install rxi-json-lua  --tree=lua_modules --lua-dir=C:\lua5.1
+luarocks install rxi-json-lua  --tree=lua_modules --lua-dir=/usr/local/opt/lua@5.1
 ```
