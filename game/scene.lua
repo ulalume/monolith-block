@@ -38,7 +38,7 @@ function scene:reset()
 
   for index, isActive in ipairs(self.activeControllers) do
     local player = Player:new(index, x[index], y[index], direction[index], self.monolith.input)
-    local goal = LineCollision:new(x[index], y[index], direction[index], 2.1)
+    local goal = LineCollision:new(x[index], y[index], direction[index], 2.0 + 0.2)
     table.insert(self.players, player)
     table.insert(self.playerGoals, goal)
 
