@@ -41,10 +41,10 @@ end
 
 function Player:death()
   self.isDied = true
+
   self.lineCollision.x = self.defX
   self.lineCollision.y = self.defY
   self.lineCollision.length = 2.1
-
 end
 
 return Player
