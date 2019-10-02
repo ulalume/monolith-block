@@ -23,10 +23,11 @@ function LineCollision:intersection(x0, y0, x1, y1)
   return math2.intersectionTwoLineSegments(px1, py1, px2, py2, x0, y0, x1, y1)
 end
 
-function LineCollision:draw(r, g, b)
+function LineCollision:draw(r, g, b, lineWidth)
+  lineWidth = lineWidth or 2
   love.graphics.push()
   love.graphics.setColor(r, g, b)
-  love.graphics.setLineWidth(2)
+  love.graphics.setLineWidth(lineWidth)
 
   local x1, y1 = self:getLeft()
   local x2, y2 = self:getRight()

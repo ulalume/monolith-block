@@ -11,11 +11,13 @@ return {
   {
 	  death="assets/sound/death.json",
 	  jump="assets/sound/jump.json",
+	  item="assets/sound/item.json",
   },
   -- priority
   -- 音が同時に鳴ったときに、数字の大きい方の音を優先
   {
-	  death=2,
+	  death=3,
 	  jump=1,
+    item=2,
   }
 }

@@ -3,12 +3,10 @@ package.path = package.path .. ';' .. love.filesystem.getSource() .. '/lua_modul
 package.cpath = package.cpath .. ';' .. love.filesystem.getSource() .. '/lua_modules/share/lua/5.1/?.so'
 
 local monolith = require('monolith.core')
-  .new({ windowScale = 4.0, ledColorBits = 2 })
+  .new({ windowScale = 1.0, ledColorBits = 3 })
 
 local shutdownkey = require "util.shutdownkey":new(monolith.input)
 local musicSystem
-
-
 
 local game
 
@@ -53,10 +51,29 @@ function love.update(dt)
   game:update(dt)
 end
 
+local afterImage
 --------------------------------------------------
 function love.draw()
-  monolith:beginDraw()
+  --[[
+  local tempCanvas = love.graphics.newCanvas(monolith.canvas:getDimensions())
+  tempCanvas:renderTo(function()
+      love.graphics.setColor(1,1,1)
+      love.graphics.draw(monolith.canvas, 0, 0)
+  end)
+  afterImage = tempCanvas
 
+  monolith:beginDraw()
+  love.graphics.setColor(1, 1, 1, 0.95)
+  if afterImage then
+    love.graphics.draw(afterImage, 0, 0)
+  end
+  love.graphics.draw(tempCanvas, 0, 0)
+  love.graphics.setColor(0, 0, 0, 0.1)
+  love.graphics.rectangle("fill", 0, 0, 128, 128)
+
+  love.graphics.setColor(1,1,1)
+  --]]
+  monolith:beginDraw()
   -- ここで任意の描画をしてください
   game:draw()
 
